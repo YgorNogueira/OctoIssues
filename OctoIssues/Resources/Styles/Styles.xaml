@@ -49,6 +49,14 @@
         </Setter>
     </Style>
 
+    <Style TargetType="Button" x:Key="blueButton">
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="BackgroundColor" Value="#195BBE"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontFamily" Value="PPR"/>
+    </Style>
+
     <Style TargetType="CheckBox">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
         <Setter Property="MinimumHeightRequest" Value="44"/>
@@ -180,6 +188,7 @@
     <Style TargetType="Label" x:Key="Headline">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource MidnightBlue}, Dark={StaticResource White}}" />
         <Setter Property="FontSize" Value="32" />
+        <Setter Property="FontFamily" Value="POPR"/>
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="HorizontalTextAlignment" Value="Center" />
     </Style>
@@ -413,6 +422,13 @@
     <Style TargetType="Page" ApplyToDerivedTypes="True">
         <Setter Property="Padding" Value="0"/>
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource OffBlack}}" />
+    </Style>
+
+    <Style TargetType="Image" x:Key="octoLogoMainPage" ApplyToDerivedTypes="True">
+        <Setter Property="Source" Value="octologo_smaller.png"/>
+        <Setter Property="Aspect" Value="AspectFit"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="MaximumHeightRequest" Value="350"/>
     </Style>
 
     <Style TargetType="Shell" ApplyToDerivedTypes="True">

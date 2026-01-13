@@ -3,21 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OctoIssues.MainPage">
 
-    <ScrollView>
+    <Grid
+        ColumnDefinitions="*, *"
+        >
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+            BackgroundColor="#1E3A72"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            Spacing="10">
+
             <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+                Style="{StaticResource octoLogoMainPage}"
+                />
 
             <Label
-                Text="Hi, welcome to OctoIssues!"
+                Text="Hi, welcome to Octo!"
                 Style="{StaticResource Headline}"
+                FontFamily="POPS"
                 SemanticProperties.HeadingLevel="Level1" />
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                >
+
+                <Button
+                    Clicked="OnLoginClicked"
+                    Text="Login with GitHub"
+                    TextColor="White"
+                    Style="{StaticResource blueButton}"
+                    />
+            </HorizontalStackLayout>
+
         </VerticalStackLayout>
-    </ScrollView>
+    </Grid>
 
 </ContentPage>
